@@ -39,13 +39,13 @@ public class Practise1 {
 	}
 
 	private static JSONObject readJSONReport() throws Exception {
-		return (JSONObject) JSONValue.parse(new FileReader("report.json"));
+		return (JSONObject) JSONValue.parse(new FileReader("resources/report.json"));
 	}
 }
 
 class Pagekey{
-	int id;
-	String name;
+	public int id;
+	public String name;
 	
 	public Pagekey(int id, String name){
 		this.id = id;
